@@ -1,0 +1,97 @@
+.priceTagContainer {
+  margin: 1rem auto;
+  color: #325f9a;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.priceTagItem {
+  border: 2px solid #325f9a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+}
+
+.logoBanner {
+  background-color: #325f9a;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImage {
+  width: 4rem;
+}
+
+.priceBox {
+  border: 2px solid #325f9a;
+  border-radius: 8px;
+  width: 70%;
+  display: flex;
+  padding: 1rem;
+  margin-top: 0.8rem;
+}
+
+.dollaSign {
+  background-color: #325f9a;
+  color: #f9f9f9;
+  font-size: 2.6rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50%;
+}
+
+.descBox {
+  font-weight: 600;
+  width: 70%;
+}
+.linesBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.descLine {
+  width: 100%;
+  height: 2px;
+  background-color: #325f9a;
+}
+
+.machineInfoBox {
+  font-weight: 800;
+  width: 80%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.machInfoLine {
+  margin-top: 1rem;
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  width: 80%;
+  font-weight: 900;
+}
+.machInfoLine p {
+  width: 50%;
+}
+.machInfoLine .descLine {
+  width: 80%;
+}
+
+.warrantyBox {
+  width: 80%;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media print {
+  .priceTagContainer {
+    transform: scale(1.5);
+    margin-top: 30rem;
+    -webkit-print-color-adjust: exact;
+  }
+}
