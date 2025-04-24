@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import styles from "./Subscriptions.module.css";
+import { useState } from "react";
 import QRCode from "react-qr-code";
 import { QRCodeSVG } from "qrcode.react";
 import logo from "../assets/matts-logo.png";
@@ -19,38 +20,28 @@ const Subscriptions = () => {
   });
   const [back, setBack] = useState();
   const [fore, setFore] = useState("#234167");
-  const [size, setSize] = useState(340);
+  const [size, setSize] = useState(500);
 
   return (
-    <>
-      <div className="headerText">
-        <h1>Extended Warranty</h1>
-        <p>Subscriptions</p>
-      </div>
-      <div className="qr-block">
-        {subs.map(({ price, url }) => (
-          <div className="qr-item" key={url}>
-            <QRCodeSVG
-              value={url}
-              size={size}
-              bgColor={back}
-              fgColor={fore}
-              title={price}
-              imageSettings={{
-                src: logo,
-                height: 150,
-                width: 150,
-              }}
-            />
-            <h3>{price}</h3>
-          </div>
-        ))}
-      </div>
-      <div className="footerText">
-        <p>Thanks for choosing Matt's Appliances</p>
-        <p>We appreciate your business!</p>
-      </div>
-    </>
+    <div className={styles.qrBlock}>
+      {subs.map(({ price, url }) => (
+        <div className={styles.qrItem} key={url}>
+          <QRCodeSVG
+            value={url}
+            size={size}
+            bgColor={back}
+            fgColor={fore}
+            title={price}
+            imageSettings={{
+              src: logo,
+              height: 250,
+              width: 250,
+            }}
+          />
+          <h3>{price}</h3>
+        </div>
+      ))}
+    </div>
   );
 };
 

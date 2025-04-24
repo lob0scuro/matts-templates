@@ -17,7 +17,6 @@ const PriceTags = () => {
           <div className={styles.linesBox}>
             <div className={styles.descLine}></div>
             <div className={styles.descLine}></div>
-            <div className={styles.descLine}></div>
           </div>
         </div>
         <div className={styles.machineInfoBox}>
@@ -48,7 +47,6 @@ const PriceTags = () => {
         <div className={styles.descBox}>
           <p>Description: </p>
           <div className={styles.linesBox}>
-            <div className={styles.descLine}></div>
             <div className={styles.descLine}></div>
             <div className={styles.descLine}></div>
           </div>

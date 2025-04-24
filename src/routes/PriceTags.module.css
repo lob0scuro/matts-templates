@@ -23,7 +23,7 @@
 }
 
 .logoImage {
-  width: 4rem;
+  width: 4.8rem;
 }
 
 .priceBox {
@@ -50,7 +50,8 @@
 .linesBox {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2.4rem;
+  margin-top: 2rem;
 }
 .descLine {
   width: 100%;
@@ -93,5 +94,6 @@
     transform: scale(1.5);
     margin-top: 30rem;
     -webkit-print-color-adjust: exact;
+    gap: 1.2rem;
   }
 }
