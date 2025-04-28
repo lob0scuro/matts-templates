@@ -1,6 +1,7 @@
 import RootLayout from "./layout/RootLayout";
 import PriceTags from "./routes/PriceTags";
 import Subscriptions from "./routes/Subscriptions";
+import TimeSheet from "./routes/TimeSheet";
 import {
   RouterProvider,
   Route,
@@ -14,6 +15,7 @@ const App = () => {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Subscriptions />} />
         <Route path="/price-tags" element={<PriceTags />} />
+        <Route path="/timesheet" element={<TimeSheet />} />
       </Route>
     )
   );
