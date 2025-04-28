@@ -68,7 +68,7 @@
   align-items: center;
 }
 .machInfoLine {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   display: flex;
   align-items: first baseline;
   justify-content: center;
@@ -84,9 +84,22 @@
 
 .warrantyBox {
   width: 80%;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   text-align: center;
   font-weight: 600;
+}
+
+.pricingBox {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.pricingBox div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 80%;
 }
 
 @media print {

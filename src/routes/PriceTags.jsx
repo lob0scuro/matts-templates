@@ -32,7 +32,18 @@ const PriceTags = () => {
         <div className={styles.warrantyBox}>
           <p>30 Day Warranty</p>
           <p>"Ask about our Extended Warranty Program"</p>
+          <div className={styles.pricingBox}>
+            <div>
+              <p>Monthly</p>
+              <div className={styles.descLine} />
+            </div>
+            <div>
+              <p>Annualy</p>
+              <div className={styles.descLine} />
+            </div>
+          </div>
         </div>
+
         <div className={styles.logoBanner}>
           <img className={styles.logoImage} src={Logo} alt="matts-logo" />
         </div>
@@ -64,6 +75,16 @@ const PriceTags = () => {
         <div className={styles.warrantyBox}>
           <p>30 Day Warranty</p>
           <p>"Ask about our Extended Warranty Program"</p>
+          <div className={styles.pricingBox}>
+            <div>
+              <p>Monthly</p>
+              <div className={styles.descLine} />
+            </div>
+            <div>
+              <p>Annualy</p>
+              <div className={styles.descLine} />
+            </div>
+          </div>
         </div>
         <div className={styles.logoBanner}>
           <img className={styles.logoImage} src={Logo} alt="matts-logo" />
