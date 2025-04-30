@@ -1,6 +1,5 @@
-import styles from "./Subscriptions.module.css";
+import styles from "../styles/Subscriptions.module.css";
 import { useState } from "react";
-import QRCode from "react-qr-code";
 import { QRCodeSVG } from "qrcode.react";
 import logo from "../assets/matts-logo.png";
 

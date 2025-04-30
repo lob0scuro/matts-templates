@@ -1,4 +1,4 @@
-import styles from "./PriceTags.module.css";
+import styles from "../styles/PriceTags.module.css";
 import React from "react";
 import Logo from "../assets/matts-logo.png";
 
@@ -32,16 +32,6 @@ const PriceTags = () => {
         <div className={styles.warrantyBox}>
           <p>30 Day Warranty</p>
           <p>"Ask about our Extended Warranty Program"</p>
-          <div className={styles.pricingBox}>
-            <div>
-              <p>Monthly</p>
-              <div className={styles.descLine} />
-            </div>
-            <div>
-              <p>Annualy</p>
-              <div className={styles.descLine} />
-            </div>
-          </div>
         </div>
 
         <div className={styles.logoBanner}>
@@ -64,27 +54,17 @@ const PriceTags = () => {
         </div>
         <div className={styles.machineInfoBox}>
           <div className={styles.machInfoLine}>
-            <p>Model No:</p>
+            <p>Monthly:</p>
             <div className={styles.descLine}></div>
           </div>
           <div className={styles.machInfoLine}>
-            <p>Serial No:</p>
+            <p>Annual:</p>
             <div className={styles.descLine}></div>
           </div>
         </div>
         <div className={styles.warrantyBox}>
           <p>30 Day Warranty</p>
           <p>"Ask about our Extended Warranty Program"</p>
-          <div className={styles.pricingBox}>
-            <div>
-              <p>Monthly</p>
-              <div className={styles.descLine} />
-            </div>
-            <div>
-              <p>Annualy</p>
-              <div className={styles.descLine} />
-            </div>
-          </div>
         </div>
         <div className={styles.logoBanner}>
           <img className={styles.logoImage} src={Logo} alt="matts-logo" />

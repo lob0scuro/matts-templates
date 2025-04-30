@@ -1,0 +1,83 @@
+.timeSheet {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.plannerHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  align-self: start;
+}
+.plannerHead h1 {
+  color: #325f99;
+  font-size: 2rem;
+  flex: 3;
+  margin: 0 0 0.5rem 0;
+}
+
+.plannerLogo {
+  width: 5.8rem;
+  margin: 0;
+}
+
+.infoHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  align-self: flex-end;
+}
+
+.infoHead div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: first baseline;
+}
+
+.headerLine {
+  border: 1px solid #000;
+  width: 200px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+  color: #325f99;
+}
+th {
+  font-size: 1.8rem;
+}
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+  height: 70px;
+  padding: 8px 8px 8px 26px;
+}
+th:first-child {
+  text-align: center;
+  padding: 8px;
+}
+th.time,
+td.time {
+  width: 20%;
+}
+
+th.tasks,
+td.tasks {
+  width: 80%;
+}
