@@ -28,4 +28,7 @@ header nav a {
   header {
     display: none;
   }
+  .buttonBlock {
+    display: none;
+  }
 }

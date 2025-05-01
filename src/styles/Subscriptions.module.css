@@ -1,39 +1,80 @@
+.buttonBlock {
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.buttonBlock button {
+  padding: 16px 18px;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #325f99;
+  color: #f9f9f9;
+}
+
 .qrBlock {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-top: 0;
-  transform: scale(0.8);
+  align-items: center;
+  justify-content: center;
 }
 
-.qrItem {
+.qrSingle {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #325f99;
   width: fit-content;
-  padding: 0.6rem;
-  border: 5px double #000;
-  border-radius: 12px;
+  height: auto;
+  padding: 0.8rem 0.6rem;
   color: #f9f9f9;
+  border-radius: 12px;
 }
-.qrItem h3 {
-  font-size: 1.5rem;
-  margin: 1.3rem 0 0.4rem 0;
+.qrItem {
+  border-radius: 8px;
+  height: auto;
+  border: 2px solid #fff;
+}
+.qrSingleTextBlock {
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+  margin: 0;
 }
 
 @media print {
+  .buttonBlock {
+    display: none;
+  }
   .qrBlock {
-    margin-top: 4rem;
-    transform: scale(1);
-  }
-  .qrItem {
-    padding: 0.8rem 1rem;
-    background-color: #325f99;
     -webkit-print-color-adjust: exact;
+    margin-top: 125px;
+    width: 100vw;
+    place-items: center;
+    gap: 2rem;
   }
-  .qrItem h3 {
-    font-size: 4rem;
-    color: #f9f9f9;
+
+  .qrSingle {
+    width: 450px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .qrItem {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .qrSingleTextBlock h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .qrSingleTextBlock h3 {
+    font-size: 42px;
   }
 }
