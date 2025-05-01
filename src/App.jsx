@@ -1,4 +1,5 @@
 import RootLayout from "./layout/RootLayout";
+import Flyers from "./routes/Flyers";
 import HoldTicket from "./routes/HoldTicket";
 import PriceTags from "./routes/PriceTags";
 import SandBox from "./routes/SandBox";
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/price-tags" element={<PriceTags />} />
         <Route path="/timesheet" element={<TimeSheet />} />
         <Route path="/holds" element={<HoldTicket />} />
+        <Route path="/flyer" element={<Flyers />} />
         <Route path="/sandbox" element={<SandBox />} />
       </Route>
     )

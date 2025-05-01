@@ -1,4 +1,5 @@
 import styles from "../styles/HoldTicket.module.css";
+import logo from "../assets/matts-logo.png";
 
 const Ticket = () => {
   return (
@@ -8,11 +9,11 @@ const Ticket = () => {
         <p>SALE</p> | <p>SET</p> | <p>EXCHANGE</p>
       </div>
       <div className={styles.customerNumberBlock}>
-        <p>CUSTOMER NAME</p>
+        <p>CUSTOMER NAME:</p>
         <div className={styles.writeLine} />
       </div>
       <div className={styles.customerNumberBlock}>
-        <p>CUSTOMER NUMBER</p>
+        <p>PHONE NUMBER:</p>
         <div className={styles.writeLine} />
       </div>
       <div className={styles.notesBlock}>
@@ -35,6 +36,9 @@ const Ticket = () => {
           <p>TIME</p>
           <div className={styles.writeLine} />
         </div>
+      </div>
+      <div className={styles.holdLogoBox}>
+        <img className={styles.holdLogo} src={logo} alt="matts-logo" />
       </div>
     </div>
   );

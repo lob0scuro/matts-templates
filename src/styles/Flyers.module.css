@@ -1,0 +1,59 @@
+.flyer {
+  -webkit-print-color-adjust: exact;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100dvh;
+  position: relative;
+}
+
+.flyer h1 {
+  font-size: 50px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #325f9a;
+  width: 100%;
+  color: #f9f9f9;
+  height: 180px;
+}
+
+.flyerHead {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.flyerHead p:last-child {
+  font-size: 55px;
+}
+
+.flyerLifeTimeCoverage {
+  text-align: center;
+  font-size: 35px;
+}
+
+.flyerCoverage {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.logoFooter {
+  background-image: url("../assets/appliances3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: 0 600px; */
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  bottom: 0;
+}
+
+.flyerLogo {
+  width: 8rem;
+}
