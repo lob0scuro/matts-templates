@@ -48,6 +48,50 @@ const subs = [
       location: "Jennings",
     },
   ],
+  [
+    {
+      price: "$95.88",
+      url: "https://buy.stripe.com/7sI02a7DT5uq1nq8wM",
+      location: "Jennings",
+    },
+    {
+      price: "119.88",
+      url: "https://buy.stripe.com/8wM2aiaQ57Cy2rudR7",
+      location: "Jennings",
+    },
+    {
+      price: "143.88",
+      url: "https://buy.stripe.com/7sI2aigap3miaY06oD",
+      location: "Jennings",
+    },
+    {
+      price: "179.88",
+      url: "https://buy.stripe.com/bIYbKS6zP0a64zC5kC",
+      location: "Jennings",
+    },
+  ],
+  [
+    {
+      price: "$95.88",
+      url: "https://buy.stripe.com/aEU7uC8HX8GCeacdR9",
+      location: "Lake Charles",
+    },
+    {
+      price: "119.88",
+      url: "https://buy.stripe.com/4gwcOW9M19KGd68eVe",
+      location: "Lake Charles",
+    },
+    {
+      price: "143.88",
+      url: "https://buy.stripe.com/fZeg186zP6yuaY08wR",
+      location: "Lake Charles",
+    },
+    {
+      price: "179.88",
+      url: "https://buy.stripe.com/7sI6qye2hbSO4zC7sO",
+      location: "Lake Charles",
+    },
+  ],
 ];
 const Subscriptions = () => {
   const fore = "#234167";
@@ -56,8 +100,10 @@ const Subscriptions = () => {
   return (
     <>
       <div className={styles.buttonBlock}>
-        <button onClick={() => setLocale(0)}>Lake Charles</button>
-        <button onClick={() => setLocale(1)}>Jennings</button>
+        <button onClick={() => setLocale(0)}>Lake Charles Monthly</button>
+        <button onClick={() => setLocale(1)}>Jennings Monthly</button>
+        <button onClick={() => setLocale(3)}>Lake Charles Annual</button>
+        <button onClick={() => setLocale(2)}>Jennings Annual</button>
       </div>
       <div className={styles.qrBlock}>
         <div className={styles.qrSingle}>

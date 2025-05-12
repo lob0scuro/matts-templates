@@ -52,15 +52,15 @@ h3 {
   }
   .qrBlock {
     -webkit-print-color-adjust: exact;
-    margin-top: 125px;
+    margin-top: 20px;
     width: 100vw;
     place-items: center;
-    gap: 2rem;
+    gap: 24px;
   }
 
   .qrSingle {
-    width: 450px;
-    height: 600px;
+    width: 250px;
+    height: 380px;
     padding: 20px;
     border-radius: 12px;
   }
@@ -71,10 +71,10 @@ h3 {
   }
 
   .qrSingleTextBlock h1 {
-    font-size: 48px;
+    font-size: 35px;
     margin-bottom: 10px;
   }
   .qrSingleTextBlock h3 {
-    font-size: 42px;
+    font-size: 28px;
   }
 }

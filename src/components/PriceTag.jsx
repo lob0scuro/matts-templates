@@ -19,11 +19,11 @@ const PriceTag = () => {
       </div>
       <div className={styles.machineInfoBox}>
         <div className={styles.machInfoLine}>
-          <p>Model No:</p>
+          <p>Monthly:</p>
           <div className={styles.descLine}></div>
         </div>
         <div className={styles.machInfoLine}>
-          <p>Serial No:</p>
+          <p>Annually:</p>
           <div className={styles.descLine}></div>
         </div>
       </div>
