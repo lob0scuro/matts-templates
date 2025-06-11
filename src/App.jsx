@@ -5,6 +5,7 @@ import PriceTags from "./routes/PriceTags";
 import SandBox from "./routes/SandBox";
 import Subscriptions from "./routes/Subscriptions";
 import TimeSheet from "./routes/TimeSheet";
+import YelpReview from "./routes/YelpReview";
 import {
   RouterProvider,
   Route,
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/holds" element={<HoldTicket />} />
         <Route path="/flyer" element={<Flyers />} />
         <Route path="/sandbox" element={<SandBox />} />
+        <Route path="/yelp" element={<YelpReview />} />
       </Route>
     )
   );

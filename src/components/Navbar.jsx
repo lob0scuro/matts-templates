@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link to="/timesheet">Time Sheet</Link>
         <Link to="/holds">Holds</Link>
         <Link to="/flyer">Flyers</Link>
-        <Link to="/sandbox">Sandbox</Link>
+        <Link to="/yelp">Yelp</Link>
       </nav>
     </header>
   );
